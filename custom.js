@@ -9,5 +9,5 @@ myTimer=setInterval(function(){
     i=(i+1)%3
     $("#picslides img").attr("src", slidepics[i])
   }
-, 15000)
+, 5000)
 })

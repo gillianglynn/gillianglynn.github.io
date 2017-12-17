@@ -1,6 +1,16 @@
 body{
-padding-top:30px;
 color:white;
+overflow-x: hidden;
+}
+#headers{
+  overflow: hidden;
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:999;
+}
+#content{
+  margin-top:150px !important;
 }
 #intro{
   background-color:Black;
@@ -31,6 +41,7 @@ h1{
 }
 h2{
   padding-top:30px;
+  margin:0px;
 }
 .subheader{
   padding-bottom:20px;
@@ -117,5 +128,12 @@ margin-left:30px;
 }
 br{
   font-size:10px;
+}
+#picslides{
+  padding:20px;
+  text-align: center;
+}
+#picslides img{
+  width:50%;
 }
 .imgborder{border-color: black; border-width: 5px; border-style: solid;}

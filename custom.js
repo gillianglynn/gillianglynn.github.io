@@ -4,10 +4,9 @@ var slidepics = ["https://github.com/gillianglynn/gillianglynn.github.io/blob/ma
 $(document).ready(function(){
   console.log("test")
 i=0
-$("#picslides img").attr("src", slidepics[i])
 myTimer=setInterval(function(){
-    i=(i+1)%3
     $("#picslides img").attr("src", slidepics[i])
+    i=(i+1)%3
   }
 , 5000)
 })

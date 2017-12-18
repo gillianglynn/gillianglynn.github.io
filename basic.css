@@ -51,19 +51,25 @@ h2{
   padding-left:30px;
   padding-bottom:30px;
 }
-img{
-  width:300px;
-  margin-left:-15px;
+#portfolio img{
+  display:block;
+  margin:auto;
+  padding:5px;
+
 } 
+
 .container{
   border-style:solid;
   border-color:black;
   border-width:5px;
   margin-bottom:30px !important;
+  padding:0;
   width:300px;
   height:300px;
-  margin:auto;
   overflow:hidden;
+}
+#headshot{
+  width:300px;
 }
 .framediv{
   height:80vh;
@@ -72,14 +78,15 @@ DIV.texthover {
     width:100%;
     display:block;
     position:relative;
-    text-align: center!important;}
+    left:-15px;
+    text-align: center!important;
+  }
 
 DIV.texthover .overlay {
   color:white;
     font-size:35px;
     position:absolute;
     top:0;
-    left:-15px;
     padding:5px;
     width:0;
     width:100%;
@@ -94,12 +101,19 @@ DIV.texthover:hover .overlay {
     .projDesc {
         display: none;
     }
+    #picslides img{
+      width:60%;
+    }
 }
 
  @media only screen and (max-width: 600px) {
     .overlay {
         display: none !important;
     }
+    #picslides, img{
+      width:90vw;
+    }
+
 }
 .projDesc{
   width:100%;
@@ -108,7 +122,8 @@ DIV.texthover:hover .overlay {
   padding:10px;
 }
 .project{
-  width:100vw;
+  max-width:100%;
+  max-height:60vh;
 }
 .portfolioitem{
   color:white;
@@ -133,7 +148,45 @@ br{
   padding:20px;
   text-align: center;
 }
-#picslides img{
-  width:50%;
+.imgborder{
+  /*border-color: black; 
+  border-width: 5px; 
+  border-style: solid;*/
+  background-color:black;
 }
-.imgborder{border-color: black; border-width: 5px; border-style: solid;}
+.sectionHeader{
+  height:30vh;
+  display:block;
+  margin:auto;
+  padding:5px;
+}
+.break{
+  width:100%;
+  height:30vh;
+  background-color:black;
+  margin-bottom:30px;
+}
+.store{
+  width:90%;
+  height:20vh;
+  background-color:white;
+  margin-left:5%;
+  margin-right:5%;
+}
+.storeIcon{
+  height:20vh;
+  display:block;
+  margin:auto;
+}
+a.anchor{
+  display: block; 
+  position: relative; 
+  top: -155px; 
+  visibility: hidden;
+}
+.storeImg{
+  height:50vh;
+  width:90%;
+  margin-left:5%;
+  margin-right:5%;
+}
